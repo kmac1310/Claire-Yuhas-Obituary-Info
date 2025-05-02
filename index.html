@@ -22,33 +22,27 @@
     }
     body::before {
       content: "";
-      background-image: url('https://kmac1310.github.io/claire-memorial/dove.png');
-      background-size: 180px;
+      background-image: url('https://kmac1310.github.io/claire-memorial/dove.jpg');
+      background-size: cover;
       background-repeat: no-repeat;
-      background-position: top center;
+      background-position: center;
       position: absolute;
-      top: 100px;
-      left: 50%;
-      transform: translateX(-50%);
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 300px;
-      z-index: 1;
+      height: 100%;
+      z-index: 0;
       pointer-events: none;
+      opacity: 0.2;
       animation: fadeOutDove 12s ease-in-out forwards;
     }
     @keyframes fadeOutDove {
-      0% { opacity: 0.25; }
-      50% { opacity: 0.18; }
-      100% { opacity: 0; }
+      0% { opacity: 0.2; }
+      50% { opacity: 0.15; }
+      100% { opacity: 0.05; }
     }
     .dove-overlay {
-      position: absolute;
-      top: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 140px;
-      opacity: 0.95;
-      z-index: 2;
+      display: none;
     }
     h1 {
       font-family: 'Great Vibes', cursive;
@@ -56,11 +50,15 @@
       font-size: 3.5em;
       margin-top: 160px;
       color: #3b2e5a;
+      position: relative;
+      z-index: 1;
     }
     h2 {
       text-align: center;
       color: #3b2e5a;
       margin-bottom: 10px;
+      position: relative;
+      z-index: 1;
     }
     .quote {
       font-style: italic;
@@ -70,6 +68,8 @@
       font-weight: bold;
       color: #ffffff;
       text-shadow: 1px 1px 2px #000000;
+      position: relative;
+      z-index: 1;
     }
     .section {
       background-color: rgba(0, 92, 92, 0.7);
@@ -78,6 +78,8 @@
       margin: 30px 0;
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      position: relative;
+      z-index: 1;
     }
     .countdown {
       text-align: center;
@@ -85,6 +87,8 @@
       font-weight: bold;
       color: #3b2e5a;
       margin-top: 30px;
+      position: relative;
+      z-index: 1;
     }
     a {
       color: #f0e68c;
@@ -96,8 +100,6 @@
   </style>
 </head>
 <body>
-  <img src="https://kmac1310.github.io/claire-memorial/dove.jpg" alt="White Dove" class="dove-overlay">
-
   <h1>Claire Elizabeth Yuhas</h1>
   <p class="quote">“A dove carries our prayers to the heavens and returns with peace in its wings.”</p>
   <p style="text-align: center;"><strong>July 21, 1942 – April 29, 2025</strong></p>
