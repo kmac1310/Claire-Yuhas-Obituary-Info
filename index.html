@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>In Loving Memory of Claire Elizabeth Yuhas</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f4f0;
+      color: #333;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .countdown {
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #800000;
+    }
+    a {
+      color: #0047ab;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌹 In Loving Memory of Claire Elizabeth Yuhas</h1>
+  <p style="text-align: center;"><strong>July 21, 1942 – April 29, 2025</strong></p>
+
+  <div class="section">
+    <h2>💔 Funeral & Celebration of Life</h2>
+    <p><strong>Michael J. Grant & Thomas A. Marinello Funeral Homes</strong> of Coram, N.Y., is honored to oversee the funeral services for Claire E. Yuhas. Family and friends are invited to join in remembrance.</p>
+  </div>
+
+  <div class="section">
+    <h2>📍 Location</h2>
+    <p>
+      Michael J. Grant & Thomas A. Marinello Funeral Home<br>
+      493 Middle Country Road<br>
+      Coram, NY 11727<br>
+      ☎️ (631) 732-6969<br>
+      <a href="https://www.michaeljgrantfuneralhomes.com/obituaries/Claire-Elizabeth-Yuhas?obId=42323903" target="_blank">→ Visit Funeral Home Website</a><br>
+      <a href="https://www.google.com/maps/place/493+Middle+Country+Rd,+Coram,+NY+11727" target="_blank">→ View on Google Maps</a>
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>📅 Schedule of Services</h2>
+    <ul>
+      <li><strong>Monday, May 12, 2025</strong></li>
+      <li>Visitation: 2:00 PM – 4:00 PM</li>
+      <li>Visitation: 7:00 PM – 9:00 PM</li>
+      <li>Religious Blessing during evening visitation</li>
+    </ul>
+    <ul>
+      <li><strong>Tuesday, May 13, 2025</strong></li>
+      <li>Final Farewells Begin: 11:00 AM</li>
+      <li>Procession to: Pinelawn Memorial Park, 2030 Wellwood Ave, Farmingdale, NY 11735</li>
+      <li><a href="https://www.google.com/maps/place/2030+Wellwood+Ave,+Farmingdale,+NY+11735" target="_blank">→ View Pinelawn on Google Maps</a></li>
+    </ul>
+  </div>
+
+  <div class="section countdown" id="countdown">
+    Countdown to Final Farewells Begins...
+  </div>
+
+  <script>
+    const countdownEl = document.getElementById('countdown');
+    const eventTime = new Date("May 13, 2025 11:00:00").getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = eventTime - now;
+
+      if (distance < 0) {
+        countdownEl.textContent = "Claire’s Celebration of Life is now in progress.";
+        return;
+      }
+
+      const minutesLeft = Math.floor(distance / (1000 * 60));
+      countdownEl.textContent = `Claire’s Celebration of Life begins in: ${minutesLeft} tokens left today.`;
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 60000); // Update every minute
+  </script>
+</body>
+</html>
