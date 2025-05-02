@@ -18,12 +18,22 @@
       max-width: 750px;
       margin: auto;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      position: relative;
+    }
+    .dove-overlay {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 140px;
+      opacity: 0.95;
+      z-index: 2;
     }
     h1 {
       font-family: 'Great Vibes', cursive;
       text-align: center;
       font-size: 3.5em;
-      margin-top: 140px;
+      margin-top: 160px;
       color: #3b2e5a;
     }
     h2 {
@@ -61,6 +71,8 @@
   </style>
 </head>
 <body>
+  <img src="https://kmac1310.github.io/claire-memorial/dove.jpg" alt="White Dove" class="dove-overlay">
+
   <h1>Claire Elizabeth Yuhas</h1>
   <p class="quote">“And flights of angels sing thee to thy rest.” – Shakespeare</p>
   <p style="text-align: center;"><strong>July 21, 1942 – April 29, 2025</strong></p>
