@@ -4,26 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>In Loving Memory of Claire Elizabeth Yuhas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f7f4f0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to bottom, #ffffff, #f0f4ff);
       color: #333;
       padding: 20px;
-      max-width: 600px;
+      max-width: 700px;
       margin: auto;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/68/White_dove_flying.jpg');
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
     }
-    h1, h2 {
+    h1 {
+      font-family: 'Great Vibes', cursive;
       text-align: center;
+      font-size: 3em;
+      margin-top: 180px;
+      color: #4b2e83;
+    }
+    h2 {
+      text-align: center;
+      color: #4b2e83;
+    }
+    .quote {
+      font-style: italic;
+      text-align: center;
+      margin-top: 10px;
+      color: #6a6a6a;
     }
     .section {
-      margin-bottom: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
     }
     .countdown {
       text-align: center;
       font-size: 1.5em;
       font-weight: bold;
       color: #800000;
+      margin-top: 20px;
     }
     a {
       color: #0047ab;
@@ -35,7 +58,8 @@
   </style>
 </head>
 <body>
-  <h1>🌹 In Loving Memory of Claire Elizabeth Yuhas</h1>
+  <h1>Claire Elizabeth Yuhas</h1>
+  <p class="quote">“And flights of angels sing thee to thy rest.” – Shakespeare</p>
   <p style="text-align: center;"><strong>July 21, 1942 – April 29, 2025</strong></p>
 
   <div class="section">
@@ -71,7 +95,7 @@
     </ul>
   </div>
 
-  <div class="section countdown" id="countdown">
+  <div class="countdown" id="countdown">
     Countdown to Final Farewells Begins...
   </div>
 
@@ -93,7 +117,7 @@
     }
 
     updateCountdown();
-    setInterval(updateCountdown, 3600000); // Update every hour
+    setInterval(updateCountdown, 3600000);
   </script>
 </body>
 </html>
